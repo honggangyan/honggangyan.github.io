@@ -15,7 +15,6 @@ This portfolio includes several projects demonstrating my skills and experience.
 
 - **Email**: [honggang.ds@gmail.com](mailto:honggang.ds@gmail.com)
 - **LinkedIn**: [linkedin.com/in/honggang-yan](https://linkedin.com/in/honggang-yan/)
-- **GitHub**: [github.com/honggangyan](https://github.com/honggangyan/)
 - **Location**: Frankfurt am Main
 
 
