@@ -12,20 +12,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function revealText() {
       bulletPoints.forEach((point) => {
-          const words = point.textContent.split(' '); // 将段落分割为单词
-          point.innerHTML = ''; // 清空段落内容
+          const text = point.textContent;
+          point.innerHTML = '';
 
-          words.forEach((word, index) => {
-              const span = document.createElement('span'); // 创建一个新的 span 元素
-              span.textContent = word + ' '; // 添加单词和空格
-              span.style.opacity = 0; // 初始透明度为0
-              point.appendChild(span); // 将单词添加到段落中
+          for (let i = 0; i < text.length; i++) {
+              const span = document.createElement('span');
+              span.textContent = text[i];
+              span.style.opacity = 0;
+              point.appendChild(span);
 
               setTimeout(() => {
-                  span.style.opacity = 1; // 显示单词
+                  span.style.opacity = 1;
               }, delay);
-              delay += 100; // 每个单词之间的延迟（300毫秒）
-          });
+              delay += 30;
+          }
       });
       revealed = true;
   }
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (sectionPosition < screenPosition && !revealed) {
           revealText();
-          window.removeEventListener('scroll', arguments.callee); // 只执行一次
+          window.removeEventListener('scroll', arguments.callee);
       }
   });
 });
