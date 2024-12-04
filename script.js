@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('scroll', () => {
-      const section = document.getElementById('about');
+      const section = document.getElementById('text-container');
       const sectionPosition = section.getBoundingClientRect().top;
       const screenPosition = window.innerHeight;
 
