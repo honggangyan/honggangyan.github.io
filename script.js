@@ -8,6 +8,7 @@ function toggleMenu() {
 document.addEventListener('DOMContentLoaded', () => {
   const bulletPoints = document.querySelectorAll('.bullet-point');
   let delay = 0;
+  let revealed = false;
 
   function revealText() {
       bulletPoints.forEach((point) => {
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
               delay += 100; // 每个单词之间的延迟（300毫秒）
           });
       });
+      revealed = true;
   }
 
   window.addEventListener('scroll', () => {
@@ -36,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('Section Position:', sectionPosition);
       console.log('Screen Position:', screenPosition);
 
-      if (sectionPosition < screenPosition) {
+      if (sectionPosition < screenPosition && !revealed) {
           revealText();
           window.removeEventListener('scroll', arguments.callee); // 只执行一次
       }
