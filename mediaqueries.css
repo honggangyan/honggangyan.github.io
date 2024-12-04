@@ -28,7 +28,7 @@
         display: flex;
     }
 
-    #experience,
+    #skills,
     .section-experience,
     .projects-container {
         margin-top: 2rem;
@@ -143,7 +143,7 @@
 
     #profile,
     #about,
-    #experience,
+    #skills,
     #projects,
     #contact {
         height: fit-content;
