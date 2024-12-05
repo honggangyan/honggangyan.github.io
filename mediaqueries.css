@@ -8,9 +8,12 @@
         margin-bottom: 6rem;
     }
 
-    .about-containers,
+    .about-containers {
+        flex-wrap: nowrap;
+
+    }
     .experience-container {
-        flex-wrap: wrap;
+        flex-wrap:wrap;
     }
 
     #contact, #projects, #gallery {
