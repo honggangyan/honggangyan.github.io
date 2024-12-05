@@ -167,14 +167,6 @@
     margin-top: 6rem;
 }
 
-.gallery-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 调整最小宽度 */
-    gap: 1rem;
-    margin: 0 auto;
-    max-width: 1500px;
-    width: 100%;
-}
 
 .gallery-item {
     overflow: hidden;

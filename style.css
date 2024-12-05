@@ -476,12 +476,15 @@ footer p {
     margin-top: 6rem;
 }
 
+
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-top: 2rem;    /* 上边距为 2rem */
+    margin-bottom: 2rem; /* 下边距为 2rem */
+    margin-left: auto;   /* 左边距自动计算 */
+    margin-right: auto;
     max-width: 1500px;
     width: 100%;
 }
