@@ -279,7 +279,7 @@ section {
 
 .about-containers,
 .about-details-container {
-  display: flex;
+  display:flex;
 }
 
 .about-details-container {
@@ -288,12 +288,14 @@ section {
 }
 
 .about-containers {
+  display: flex;
   gap: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
 .details-container {
+  min-width: 200px;
   flex: 1;
   padding: 1.5rem;
   background: white;
@@ -406,11 +408,10 @@ section {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
-}
-
-.project-title {
   margin: 1rem;
   color: black;
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .project-btn {
@@ -419,6 +420,10 @@ section {
 }
 
 /* Contact */
+#contact {
+  position: relative;
+}
+
 #contact {
   display: flex;
   flex-direction: column;
@@ -486,7 +491,7 @@ footer p {
     margin-left: auto;   /* 左边距自动计算 */
     margin-right: auto;
     max-width: 1800px;
-    width: 100%;
+    margin-left: auto;   /* 左边距自动计算 */
 }
 
 .gallery-item {
