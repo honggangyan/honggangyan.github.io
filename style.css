@@ -485,7 +485,7 @@ footer p {
     margin-bottom: 2rem; /* 下边距为 2rem */
     margin-left: auto;   /* 左边距自动计算 */
     margin-right: auto;
-    max-width: auto;
+    max-width: 1800px;
     width: 100%;
 }
 
