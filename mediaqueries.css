@@ -16,6 +16,11 @@
         flex-wrap:wrap;
     }
 
+
+    .arrow {
+        display: none;
+    }
+
     #contact, #projects, #gallery {
         height: fit-content;
     }
@@ -39,10 +44,6 @@
     #profile,
     .section-container {
         display: block;
-    }
-
-    .arrow {
-        display: none;
     }
 
     #contact,
