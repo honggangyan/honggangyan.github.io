@@ -480,7 +480,8 @@ footer p {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
     gap: 1rem;
-    margin: 0 auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
     max-width: 1500px;
     width: 100%;
 }
@@ -505,11 +506,7 @@ footer p {
 }
 
 /* 媒体查询 */
-@media screen and (max-width: 600px) {
-    .gallery-container {
-        margin: 0 1rem;
-    }
-}
+
 
 .gallery-item:hover {
     transform: scale(1.05);
