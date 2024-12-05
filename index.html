@@ -19,28 +19,30 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
+
     <nav id="hamburger-nav">
         <div class="logo">Honggang Yan</div>
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
-                <!-- This is the three lines of hamburger-icon -->
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <div class="menu-links">
-                <!-- This is the expanded menu -->
                 <li><a href="#about" onclick="toggleMenu()">About</a></li>
                 <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
                 <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#gallery" onclick="toggleMenu()">Gallery</a></li>
                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
             </div>
         </div>
     </nav>
+
     <section id="profile">
         <div class="section__pic-container">
             <img src="assets/profile-pic.png" alt="Honggang Yan profile picture">
@@ -50,22 +52,16 @@
             <h1 class="title">Honggang Yan</h1>
             <p class="section__text__p2">Data scientist</p>
             <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/CV_HonggangYan.pdf')">
-                    Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='#contact'">
-                    Contact info
-                </button>
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV_HonggangYan.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact info</button>
             </div>
             <div class="social-container">
-                <img src="./assets/linkedin.png" alt="My Linkedin profile" class="icon"
-                    onclick="location.href='https://linkedin.com/in/honggang-yan/'">
-
-                <img src="./assets/github.png" alt="My Github profile" class="icon"
-                    onclick="location.href='https://github.com/honggangyan/'">
+                <img src="./assets/linkedin.png" alt="My Linkedin profile" class="icon" onclick="location.href='https://linkedin.com/in/honggang-yan/'">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/honggangyan/'">
             </div>
         </div>
     </section>
+
     <section id="about">
         <p class="section__text__p1">Get To Know More</p>
         <h1 class="title">About Me</h1>
@@ -87,15 +83,16 @@
                     </div>
                 </div>
                 <div class="text-container" id="text-container">
-                    <p style="margin-bottom: 12px;" class="bullet-point">- I'm a data scientist and developer with a diverse background — aviation, real estate investment and engineering.</p>
-                    <p style="margin-bottom: 12px;" class="bullet-point">- I've closed billion-euro deals in real estate and witnessed the highs and lows of Chinese housing market.</p>
-                    <p style="margin-bottom: 12px;" class="bullet-point">- Since 2022, I've shifted gears and moved to Germany, diving headfirst into tech. I'm constantly exploring new industries such as finance, trading and energy — wherever I can bring fresh ideas and spark a little innovation.</p>
-                    <p style="margin-bottom: 12px;" class="bullet-point">- I speak fluent English und Deutsch auf A2-Niveau. Ich lerne Deutsch im Goethe-Institut. Bis Februar 2025 werde ich B1 erreichen.</p>
+                    <p class="bullet-point">- I'm a data scientist and developer with a diverse background — aviation, real estate investment and engineering.</p>
+                    <p class="bullet-point">- I've closed billion-euro deals in real estate and witnessed the highs and lows of Chinese housing market.</p>
+                    <p class="bullet-point">- Since 2022, I've shifted gears and moved to Germany, diving headfirst into tech. I'm constantly exploring new industries such as finance, trading and energy — wherever I can bring fresh ideas and spark a little innovation.</p>
+                    <p class="bullet-point">- I speak fluent English und Deutsch auf A2-Niveau. Ich lerne Deutsch im Goethe-Institut. Bis Februar 2025 werde ich B1 erreichen.</p>
                 </div>
             </div>
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'">
     </section>
+
     <section id="experience">
         <p class="section__text__p1">Explore My</p>
         <h1 class="title">Skills</h1>
@@ -232,6 +229,7 @@
         </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'">
     </section>
+
     <section id="projects">
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="title">Projects</h1>
@@ -240,68 +238,91 @@
                 <div class="details-container color-container">
                     <div class="one-project-container">
                         <img src="./assets/project-1.png" alt="project-1" class="project-pic">
-
                     </div>
                     <h2 class="experience-subtitle project-title">Energy Trading</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/honggangyan/energy_trading_simulation'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/honggangyan/energy_trading_simulation'">
-                            Live Demo
-                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/honggangyan/energy_trading_simulation'">Github</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/honggangyan/energy_trading_simulation'">Live Demo</button>
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="one-project-container">
                         <img src="./assets/project-2.png" alt="project-1" class="project-pic">
-
                     </div>
                     <h2 class="experience-subtitle project-title">Chatbot based on RAG</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/honggangyan/'">
-                            Launching soon
-                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/honggangyan/'">Launching soon</button>
                     </div>
                 </div>
                 <div class="details-container color-container">
                     <div class="one-project-container">
                         <img src="./assets/project-3.png" alt="project-1" class="project-pic">
-
                     </div>
                     <h2 class="experience-subtitle project-title">Customer Review Analysis with LLMs</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
-                            onclick="location.href='https://github.com/honggangyan/'">
-                            Launching soon
-                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/honggangyan/'">Launching soon</button>
                     </div>
                 </div>
             </div>
         </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#gallery'">
+    </section>
+
+    <section id="gallery">
+        <p class="section__text__p1">Visit my</p>
+        <h1 class="title">Gallery</h1>
+
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="assets/Munich-1.png" alt="Munich" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/Budapest-1.png" alt="Budapest" class="gallery-image">
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/Munich-2.png" alt="Munich 2" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/Graduation-1.png" alt="Graduation" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/Graduation-3.png" alt="Graduation" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/Graduation-2.png" alt="Graduation" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/Graduation-4.png" alt="Graduation" class="gallery-image">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/Hiking-2.png" alt="Hiking-2" class="gallery-image">
+            </div>
+
+            </div>
+        </div>
         <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'">
     </section>
+
     <section id="contact">
         <p class="section__text__p1">Get In Touch</p>
         <h1 class="title">Contact Me</h1>
         <div class="contact-info-upper-container">
             <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" , class="icon contact-icon email-icon">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
                 <p>
                     <a href="mailto:honggang.ds@gmail.com">honggang.ds@gmail.com</a>
                 </p>
             </div>
             <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="Linkedin icon" , class="icon contact-icon">
+                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
                 <p>
                     <a href="https://linkedin.com/in/honggang-yan/">Linkedin</a>
                 </p>
             </div>
         </div>
     </section>
+
     <footer>
         <nav>
             <div class="nav-links-container">
@@ -309,6 +330,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>

@@ -468,3 +468,64 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* Gallery Section */
+#gallery {
+    padding: 4vh 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1rem;
+    margin: 0 auto;
+    max-width: 1500px;
+    width: 100%;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* 媒体查询 */
+@media screen and (max-width: 600px) {
+    .gallery-container {
+        margin: 0 1rem;
+    }
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* 确保与其他部分一致的样式 */
+.section__text__p1 {
+    font-size: 1.5rem;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}

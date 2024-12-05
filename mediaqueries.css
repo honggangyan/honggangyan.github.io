@@ -13,8 +13,7 @@
         flex-wrap: wrap;
     }
 
-    #contact,
-    #projects {
+    #contact, #projects, #gallery {
         height: fit-content;
     }
 }
@@ -44,10 +43,12 @@
     }
 
     #contact,
-    #projects {
+    #projects,
+    #gallery {
         height: fit-content;
     }
 
+    
     section,
     .section-container {
         height: fit-content;
@@ -66,6 +67,14 @@
     .about-containers,
     .experience-container {
         margin-top: 0;
+    }
+
+    #gallery {
+        margin-bottom: 2rem;
+    }
+
+    #contact {
+        margin-top: 2rem;
     }
 }
 
@@ -145,6 +154,7 @@
     #about,
     #experience,
     #projects,
+    #gallery,
     #contact {
         height: fit-content;
     }
