@@ -2,6 +2,18 @@
 /* When screen size width is smaller than 1200px */
 /* The display rule applies */
 
+@media screen and (max-width: 2100px) {
+    .projects-container{
+        justify-content: center;
+    }
+    .projects-about-containers{
+        flex-wrap:wrap;
+        max-width: 1450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 @media screen and (max-width: 1400px) {
     #profile {
         height: 83vh;
@@ -12,11 +24,14 @@
         flex-wrap: nowrap;
 
     }
-    .experience-container {
+    .experience-container,.projects-about-containers{
         flex-wrap:wrap;
     }
 
-
+    #gallery {
+        margin: 0 5%;
+    }
+    
     .arrow {
         display: none;
     }
@@ -62,13 +77,16 @@
         margin: 0 5%;
     }
 
+
+
+
     .section__pic-container {
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
     }
 
-    .about-containers,
+    .about-containers,.projects-about-containers
     .experience-container {
         margin-top: 0;
     }
@@ -100,6 +118,7 @@
     }
 
     .about-containers,
+    .projects-about-containers,
     .experience-container,
     .contact-info-upper-container,
     .btn-container {
@@ -166,13 +185,3 @@
 
 /* Gallery Section */
 
-/* 媒体查询 */
-@media screen and (min-width: 1200px) {
-    .gallery-container {
-        grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    }
-
-    .gallery-item {
-        max-height: 500px;
-    }
-}
