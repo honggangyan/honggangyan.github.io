@@ -300,7 +300,7 @@ section {
 
 
 .details-container {
-  min-width: 210px;
+  min-width: 300px;
   flex: 1;
   padding: 1.5rem;
   background: white;
