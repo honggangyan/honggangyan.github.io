@@ -323,6 +323,7 @@ section {
 
 .bullet-point {
   transition: opacity 0.5s ease; /* 添加过渡效果 */
+  margin-bottom: 10px;
 }
 
 .section__pic-container {
