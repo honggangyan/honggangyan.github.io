@@ -191,9 +191,7 @@
     .experience-container {
     max-width: calc(80%);
   }   
-}
-@media screen and (max-width:400px ){
-    #experience {
-        min-width: fit-content;
-      } 
+    .details-container {
+    min-width: 300px;
+  }
 }
