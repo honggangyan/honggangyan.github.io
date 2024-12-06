@@ -298,8 +298,9 @@ section {
   justify-content: center;
 }
 
+
 .details-container {
-  min-width:200px;
+  min-width: 210px;
   flex: 1;
   padding: 1.5rem;
   background: white;
