@@ -39,7 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log('Screen Position:', screenPosition);
 
       if (sectionPosition < screenPosition && !revealed) {
-          revealText();
+          setTimeout(() => {
+              revealText();
+          }, 2000); // 2000 milliseconds = 2 seconds
           window.removeEventListener('scroll', arguments.callee);
       }
   });
