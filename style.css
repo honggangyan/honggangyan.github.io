@@ -299,7 +299,7 @@ section {
 }
 
 .details-container {
-  min-width:fit-content;
+  min-width:200px;
   flex: 1;
   padding: 1.5rem;
   background: white;
